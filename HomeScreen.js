@@ -1,4 +1,4 @@
-import { View, Button,StyleSheet} from 'react-native';
+import { View, Button, StyleSheet, TouchableWithoutFeedback } from 'react-native';
 export default function HomeScreen({ navigation }) {
     const styles = StyleSheet.create({
         loginButtonSection: {
@@ -6,16 +6,20 @@ export default function HomeScreen({ navigation }) {
             height: '100%',
             justifyContent: 'center',
             alignItems: 'center'
-         }
-        })
+        }
+    })
     return (
-        <View style = {styles.loginButtonSection}>
-            <Button style={styles.loginButtonSection}
-                title="Go to Jabe'sn profile"
-                onPress={() =>
-                    navigation.navigate('Profile', { name: 'Jane' })
-                }
-            />
-        </View>
+        <TouchableWithoutFeedback  onPress={() =>
+            navigation.navigate('Profile', { name: 'Jane' })
+        }>
+            <View style={styles.loginButtonSection}>
+                <Button
+                    title="Go to Jabe'sn profile"
+                    onPress={() =>
+                        navigation.navigate('Profile', { name: 'Jane' })
+                    }
+                />
+            </View>
+        </TouchableWithoutFeedback>
     );
 }

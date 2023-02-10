@@ -1,3 +1,6 @@
+v.03
+- added a touchwithoutfeedback property to screen in order to tap anywhere to progress
+
 v.02
 - implemented basics of screen navigator
 - fixed implementation of files by separating them by folder

@@ -15,7 +15,7 @@ export default function App() {
           component={HomeScreen}
           options ={{headerShown:false}}
         />
-        <Stack.Screen  name="Profiles" component={ProfileScreen} />
+        <Stack.Screen  name="Profile" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
 

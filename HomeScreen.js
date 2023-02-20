@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
 function disp({navigation}){
     <View style={styles.loginButtonSection}>
                 <Button
-                    title="derp"
+                    title="title"
                     onPress={() =>
                         navigation.navigate('Profile', { name: 'Jane' })
                     }

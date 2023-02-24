@@ -10,12 +10,13 @@ const styles = StyleSheet.create({
 function disp({navigation}){
     <View style={styles.loginButtonSection}>
                 <Button
-                    title="title"
+                    title="titles"
                     onPress={() =>
                         navigation.navigate('Profile', { name: 'Jane' })
                     }
                 />
             </View>
+            
     
 }
 export default function HomeScreen({ navigation }) {

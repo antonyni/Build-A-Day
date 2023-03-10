@@ -12,7 +12,7 @@ function disp({navigation}){
                 <Button
                     title="title"
                     onPress={() =>
-                        navigation.navigate('Profiles', { name: 'Janes' })
+                        navigation.navigate('Profile', { name: 'Janes' })
                     }
                 />
             </View>
